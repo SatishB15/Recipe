@@ -1,0 +1,154 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    min-width: 50%;
+    margin-top: 5rem;
+    width: 50%;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+}
+
+strong {
+    color: var(--color-wenge-brown);
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--color-nutmeg);
+    font-family: "Young Serif", serif;
+}
+
+h3 {
+    color: var(--color-dark-raspberry);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-header {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+img {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.ingredients,.instructions{
+margin: 1.5rem 0;
+border-bottom: 1px solid var(--color-light-grey);
+}
+
+.recipe-title {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+li::marker {
+    color: var(--color-nutmeg);
+}
+
+.preparation-time>ul>li::marker {
+    color: var(--color-dark-raspberry) !important;
+}
+
+.preparation-time>ul>li {
+    color: inherit;
+}
+
+.recipe-description {
+    font-weight: 600;
+    color: var(--color-wenge-brown);
+    margin: 1rem 0;
+}
+
+.preparation-time {
+    background-color: var(--color-rose-white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: var(--color-wenge-brown);
+    font-size: 16px;
+}
+
+ul,ol{
+    padding: 1rem;
+}
+
+li{
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+ol>li::marker{
+    font-weight: bold;
+}
+
+.nutrition {
+    padding-bottom: 1.5rem;
+    color: var(--color-wenge-brown);
+    font-weight: 600;
+}
+
+.nutritional-value{
+    color: var(--color-nutmeg);
+}
+
+.nutrition table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.nutrition table tr:not(:last-child) {
+    border-bottom: 1pt solid var(--color-light-grey);
+}
+
+.nutrition table th {
+    color: var(--color-wenge-brown);
+}
+
+.nutrition table th,
+.nutrition table td {
+    padding: 10px 30px;
+}
+
+.attribution{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width:576px) {
+    .card {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    .card-header {
+        padding: 0;
+    }
+}
+
+@media (min-width:768px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media (min-width:992px) {
+    .card {
+        width: 50%;
+    }
+}
